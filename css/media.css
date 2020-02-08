@@ -1,0 +1,146 @@
+@media (max-width:1650px) {
+  .container{
+    max-width: 1360px;
+    padding: 0 15px;
+  }
+  .menu li + li{
+    padding-left: 25px;
+  }
+  .header__btn{
+    padding: 24px 35px 24px 35px;
+  }
+}
+@media (max-width:1450px){
+  .container{
+    max-width: 1170px;
+  }
+  .header__btn{
+    padding: 12px 30px 12px 30px;
+  }
+  .header__btn span{
+    display: none;
+  }
+}
+@media (max-width:1200px){
+  .logo img{
+    width: 161px;
+    height: 48px;
+  }
+  .header__btn{
+    display: none;
+  }
+  .menu li + li{
+    padding-left: 20px;
+  }
+  .top__wrapper{
+    max-width: 90%;
+    padding-top: 325px;
+  }
+}
+@media (max-width:992px){
+  body.lock {
+    overflow: hidden;
+  }
+  .menu__btn {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 11;
+  }
+  .menu__btn span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .menu__btn:before,
+  .menu__btn:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .menu__btn:before {
+    top: 0;
+  }
+  .menu__btn:after {
+    bottom: 0;
+  }
+  .menu__btn.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .menu__btn.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .menu__btn.active span {
+    transform: scale(0);
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #395b89;
+    z-index: 10;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu.active {
+    left: 0;
+  }
+  .header__btn{
+    display: block;
+    position: absolute;
+    right: 60px;
+  }
+  .header__btn span{
+    display: inline;
+  }
+  .menu__list {
+    padding: 120px 16px 0 16px;
+  }
+  .menu__list li {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .menu li+li {
+    padding-left: 0px;
+  }
+  .menu__list li a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .top__btn{
+    padding: 18px 55px;
+    border-radius: 26px;
+  }
+}
+
+@media (max-width:576px){
+  .header__btn span{
+    display: none;
+  }
+}
+
+@media (max-height:930px){
+  .top__wrapper {
+    padding-top: 325px;
+}
+}
+
+
+@media (min-width: 992px) {
+  .menu ul {
+    display: block !important;
+  }
+}
