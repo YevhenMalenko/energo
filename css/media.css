@@ -1,11 +1,6 @@
 @media (max-height:930px){
   .top__wrapper {
-    padding-top: 325px;
-}
-}
-@media (max-height:850px){
-  .top__wrapper {
-    padding-top: 250px;
+    padding-top: 310px;
   }
 }
 @media (max-height:700px){
