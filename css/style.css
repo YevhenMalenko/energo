@@ -48,6 +48,7 @@ h1, h2{
 }
 .logo{
   padding: 37px 0 50px;
+  z-index: 11;
 }
 .logo img{
   width: 217px;
@@ -93,9 +94,10 @@ h1, h2{
   display: none;
 }
 .header__btn{
-  padding: 24px 54px 24px 47px;
+  padding: 22px 52px 22px 46px;
   border-radius: 34px;
   box-shadow: 0px 2px 130.72px 21.28px rgba(0, 0, 0, 0.07);
+  z-index: 11;
 }
 .header__btn span{
   font-weight: 300;
@@ -122,8 +124,8 @@ h1, h2{
 }
 .social__list-item a{
   color: #fff;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 28px;
 }
 .social__list-item a:hover{
   color: #e37f1e;
@@ -148,15 +150,49 @@ h1, h2{
 }
 .top__btn{
   font-weight: 700;
-  padding: 24px 55px;
+  padding: 22px 52px;
   border-radius: 26px;
   display: block;
   margin: 35px auto 0 auto;
 }
+.price__menu{
+  position: relative;
+}
+.price__menu-item{
+  position: absolute;
+  bottom: 100px;
+}
+.price__menu-item:before,
+.price__menu-item:after{
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #6b6b6b;
+}
+.price__menu-item:before{
+  margin-bottom: 25px;
+}
+.price__menu-item:after{
+  margin-top: 25px;
+}
+.price__menu-item a{
+  color: #fff;
+  font-size: 23px;
+  line-height: 23px;
+}
+.price__menu-item a:hover{
+  color: #e37f1e;
+}
+.item-left{
+  left: 15px;
+}
+.item-right{
+  right: 15px;
+}
 .bottom{
   position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: 40px;
 }
 .bottom__inner{
   display: flex;
@@ -209,10 +245,10 @@ h1, h2{
   background-color: #6b6b6b;
 }
 .bottom__right:before{
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .bottom__right:after{
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .advantages__item{
   text-align: center;
@@ -227,33 +263,4 @@ h1, h2{
 .advantages__title{
   font-size: 20px;
   line-height: 20px;
-}
-.price__menu-item{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.price__menu-item:before,
-.price__menu-item:after{
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: #6b6b6b;
-}
-.price__menu-item:before{
-  margin-bottom: 25px;
-}
-.price__menu-item:after{
-  margin-top: 25px;
-}
-.price__menu-item a{
-  color: #fff;
-  font-size: 23px;
-  line-height: 23px;
-}
-.item-left{
-  left: 10%;
-}
-.item-right{
-  right: 10%;
 }
