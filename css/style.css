@@ -30,6 +30,9 @@ h1, h2{
   outline: none;
   cursor: pointer;
 }
+.default__btn:hover{
+  box-shadow: 0px 0px 5px #e47911;
+}
 .container{
   max-width: 1600px;
   margin: 0 auto;
@@ -94,7 +97,8 @@ h1, h2{
   display: none;
 }
 .header__btn{
-  padding: 22px 52px 22px 46px;
+  font-weight: 300;
+  padding: 21px 52px 21px 46px;
   border-radius: 34px;
   box-shadow: 0px 2px 130.72px 21.28px rgba(0, 0, 0, 0.07);
   z-index: 11;
@@ -150,7 +154,8 @@ h1, h2{
 }
 .top__btn{
   font-weight: 700;
-  padding: 22px 52px;
+  font-size: 20px;
+  padding: 20px 52px;
   border-radius: 26px;
   display: block;
   margin: 35px auto 0 auto;
@@ -263,4 +268,18 @@ h1, h2{
 .advantages__title{
   font-size: 20px;
   line-height: 20px;
+}
+.bottom__left{
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  width: 100%;
+}
+.weather__widget .meteoservice-1879427898 td,
+.weather__widget .meteoservice-1879427898 th{
+  border-bottom-color: #6b6b6b!important;
+  font-size: 16px !important;
+}
+.meteoservice-1879427898 .wi {
+  font-size: 44px!important;
 }
