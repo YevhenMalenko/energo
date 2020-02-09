@@ -18,4 +18,20 @@ window.addEventListener('DOMContentLoaded', function () {
       });
   });
 
+  let button = document.querySelector('.top__btn'),
+        modalForm = document.getElementById('modal'),
+        overlay = document.querySelector('.overlay'),
+        close = document.querySelector('.modal-close');
+
+    button.addEventListener('click', function () {
+            overlay.style.display = 'block';
+            modalForm.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+    close.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            modalForm.style.display = 'none';
+            document.body.style.overflow = '';
+        });
 });
