@@ -390,7 +390,7 @@ h1, h2{
 .header-custom .menu a:focus{
   color: #47a1ff;
 }
-.menu a:after{
+.header-custom .menu a:after{
   background-color: #47a1ff; 
 }
 .header__content-custom{
