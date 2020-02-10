@@ -271,10 +271,10 @@ h1, h2{
   width: 40px!important;
 }
 .gsInformer table td {
-  font-size: 18px!important;
+  font-size: 16px!important;
 }
-.gsLinks{
-  display: none;
+.gsInformer .gsLinks{
+  display: none!important;
 }
 /*modal*/
 .modal{
