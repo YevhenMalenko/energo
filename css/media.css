@@ -205,11 +205,6 @@
   .bottom__inner{
     display: block;
   }
-  .bottom__left{
-    text-align: center;
-    max-width: 133px;
-    margin: 0px auto;
-  }
   .bottom__right{
     max-width: 80%;
     margin: 25px auto 0 auto;
@@ -220,8 +215,6 @@
   .weather__widget{
     position: absolute;
     top: 160px;
-    left: 0;
-    right: 0;
   }
 }
 @media (max-width:768px){

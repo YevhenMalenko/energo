@@ -255,7 +255,7 @@ h1, h2{
 .bottom__left{
   display: flex;
   justify-content: space-between;
-  max-width: 450px;
+  max-width: 520px;
   width: 100%;
 }
 .weather__widget .meteoservice-1756989645 td,
@@ -267,6 +267,15 @@ h1, h2{
   font-size: 44px!important;
 }
 
+.gsInformer img {
+  width: 40px!important;
+}
+.gsInformer table td {
+  font-size: 18px!important;
+}
+.gsLinks{
+  display: none;
+}
 /*modal*/
 .modal{
   background: #fff;
