@@ -209,6 +209,11 @@
     max-width: 80%;
     margin: 25px auto 0 auto;
   }
+  .bottom__left{
+    text-align: center;
+    max-width: 133px;
+    margin: 0px auto;
+  }
   .top__btn{
     padding: 18px 42px;
   }
@@ -218,7 +223,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
-  }
+  
 }
 @media (max-width:768px){
   .menu li:last-child{
