@@ -25,10 +25,11 @@
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Сертификаты</a></li>
             <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Черный список</a></li>
           </ul>
         </nav>
         <button class="header__btn default__btn"><span>(342) 274-60-14</span></button>
-        <div class="menu__btn">
+        <div class="menu__btn menu__btn-dark">
           <span></span>
         </div>
       </div>
@@ -100,6 +101,23 @@
   </main>
 
 
+<script>
+  let burger = document.querySelector('.menu__btn'),
+      menu = document.querySelector('.menu'),
+      menuItem = document.querySelectorAll('.menu a');
 
+  burger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('lock');
+      menuItem.forEach(function(item) {
+          item.addEventListener('click', function() {
+              burger.classList.remove('active');
+              menu.classList.remove('active');
+              document.body.classList.remove('lock');
+          });
+      });
+  });
+</script>
 </body>
 </html>

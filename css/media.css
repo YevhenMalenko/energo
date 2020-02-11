@@ -1,19 +1,9 @@
 @media (max-height:930px){
   .top__wrapper {
-    padding-top: 380px;
+    padding-top: 340px;
   }
 }
 @media (max-height:760px){
-  .top__wrapper {
-    padding-top: 250px;
-  }
-}
-@media (max-height:700px){
-  .top__wrapper {
-    padding-top: 220px;
-  }
-}
-@media (max-height:640px){
   .top__wrapper {
     padding-top: 200px;
   }
@@ -24,7 +14,7 @@
     padding: 0 15px;
   }
   .menu a{
-    font-size: 16px;
+    font-size: 15px;
   }
   .menu li + li{
     padding-left: 25px;
@@ -36,14 +26,20 @@
   .top__btn{
     padding: 18px 35px;
   }
+  .top__wrapper {
+    padding-top: 250px;
+  }
+  .pricelist__link{
+    padding-top: 15px;
+  }
   .bottom__right {
-    max-width: 480px;
+    max-width: 450px;
   }
   .advantages__title {
-    font-size: 16px;
+    font-size: 15px;
   }
   .advantages__items img {
-    width: 40px;
+    width: 38px;
   }
   .blacklist__title{
     font-size: 17px;
@@ -57,6 +53,7 @@
     margin-right: -25px;
     padding: 12px 30px 12px 30px;
   }
+
 }
 @media (max-width:1200px){
   .logo img{
@@ -76,7 +73,7 @@
   }
   .top__wrapper{
     max-width: 90%;
-    padding-top: 280px;
+    padding-top: 200px;
   }
   .bottom__right{
     max-width: 480px;
@@ -94,6 +91,20 @@
     padding-left: 10px;
   }
 }
+@media (max-height:650px){
+  .top__wrapper {
+    padding-top: 180px;
+  }
+  .bottom {
+    bottom: 40px;
+  }
+}
+@media (max-height: 580px){
+  .top__wrapper {
+    padding-top: 150px;
+  }
+}
+
 @media (max-width:992px){
   body.lock {
     overflow: hidden;
@@ -114,6 +125,9 @@
     top: 11px;
     transition: all 0.3s ease 0s;
   }
+  .menu__btn.menu__btn-dark span{
+    background-color: #000;
+  } 
   .menu__btn:before,
   .menu__btn:after {
     content: '';
@@ -123,6 +137,10 @@
     height: 2px;
     left: 0;
     transition: all 0.3s ease 0s;
+  }
+  .menu__btn.menu__btn-dark:before,
+  .menu__btn.menu__btn-dark:after {
+    background-color: #000;
   }
   .menu__btn:before {
     top: 0;
@@ -250,7 +268,7 @@
     display: none;
   }
   .top__wrapper{
-    padding-top: 310px;
+    padding-top: 270px;
     width: 100%;
   }
   .top__title{
@@ -267,7 +285,7 @@
     right: 0;
   }
   .bottom{
-    padding: 150px 0 50px;
+    padding: 50px 0 50px;
   }
   .bottom__right{
     max-width: 100%;

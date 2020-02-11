@@ -164,7 +164,7 @@ h1, h2{
   padding: 20px 52px;
   border-radius: 26px;
   display: block;
-  margin: 35px auto 0 auto;
+  margin: 25px auto 0 auto;
 }
 .pricelist__link{
   display: block;
@@ -202,11 +202,10 @@ h1, h2{
   border-radius: 50%;
 }
 .blacklist img {
-  width: 40px;
+  width: 35px;
   position: absolute;
-  top: 50%;
-  top: 44px;
-  left: 52px;
+  top: 48px;
+  left: 51px;
 }
 .blacklist__title{
   color: #fff;
@@ -233,10 +232,10 @@ h1, h2{
   background-color: #6b6b6b;
 }
 .bottom__right:before{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .bottom__right:after{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .advantages__item{
   text-align: center;
@@ -255,16 +254,8 @@ h1, h2{
 .bottom__left{
   display: flex;
   justify-content: space-between;
-  max-width: 430px;
+  max-width: 400px;
   width: 100%;
-}
-.weather__widget .meteoservice-1756989645 td,
-.weather__widget .meteoservice-1756989645 th{
-  border-bottom-color: #6b6b6b!important;
-  font-size: 16px !important;
-}
-.wi {
-  font-size: 44px!important;
 }
 
 #gsInformerID-q0DTn7e6RD87eP {
