@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Энергетик</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a5667f6f20.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header class="header header-custom">
+    <div class="container">
+      <div class="header__top">
+        <a class="logo" href="index.html">
+          <img src="images/logo-blue.png" alt="логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="info.html">Полезная информация</a></li>
+            <li><a href="#">Черный список</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn default__btn"><span>(342) 274-60-14</span></button>
+        <div class="menu__btn menu__btn-dark">
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="header__content header__content-custom" style="background-image:url(images/info-bg.jpg)">
+      <div class="header__content-overlay">
+        <div class="container">
+          
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__list-item"><a href="#"><i class="fab fa-viber"></i></a></li>
+              <li class="social__list-item"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+              <li class="social__list-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <h1 class="header__title">Полезная информация</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="posts">
+    <div class="container">
+      <div class="posts-items">
+        <arcticle class="posts__item">
+          <a href="#">
+            <img src="images/info.jpg" alt="">
+          </a>
+          <div class="posts__item-description">
+            <h3 class="posts__item-title">
+              <a href="#">Если не заводится двигатель на холодную.</a>
+            </h3>
+            <div class="posts__item-text">
+              Часто в этом случае оказывается, что перегорели свечи накаливания. Первое, что нужно сделать – это проверить их, а при необходимости – 
+              заменить вышедшие из строя. Но еще одна распространенная причина  ... 
+            </div>
+            <a href="#" class="posts__item-link">Читать далее</a>
+          </div>
+        </arcticle>
+        <arcticle class="posts__item">
+          <a href="#">
+            <img src="images/info.jpg" alt="">
+          </a>
+          <div class="posts__item-description">
+            <h3 class="posts__item-title">
+              <a href="#">Если не заводится двигатель на холодную.</a>
+            </h3>
+            <div class="posts__item-text">
+              Часто в этом случае оказывается, что перегорели свечи накаливания. Первое, что нужно сделать – это проверить их, а при необходимости – 
+              заменить вышедшие из строя. Но еще одна распространенная причина  ... 
+            </div>
+            <a href="#" class="posts__item-link">Читать далее</a>
+          </div>
+        </arcticle>
+      </div>
+
+
+    </div>
+  </section>
+
+
+<script>
+  let burger = document.querySelector('.menu__btn'),
+      menu = document.querySelector('.menu'),
+      menuItem = document.querySelectorAll('.menu a');
+
+  burger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('lock');
+      menuItem.forEach(function(item) {
+          item.addEventListener('click', function() {
+              burger.classList.remove('active');
+              menu.classList.remove('active');
+              document.body.classList.remove('lock');
+          });
+      });
+  });
+</script>
+</body>
+</html>

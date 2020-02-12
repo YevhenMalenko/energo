@@ -9,6 +9,9 @@
   }
 }
 @media (max-width:1650px) {
+  body{
+    font-size: 20px;
+  }
   .container{
     max-width: 1360px;
     padding: 0 15px;
@@ -77,6 +80,24 @@
   .blacklist__title{
     font-size: 15px;
     top: -12px;
+  }
+  .header__title{
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+
+  .posts__item-title{
+    font-size: 20px;
+  }
+  .posts__item-title a{
+    font-size: 20px;
+  }
+  .posts__item-text{
+    font-size: 20px;
+  }
+  .posts__item-link{
+    font-size: 20px;
   }
 }
 @media (max-width:1450px){
@@ -274,7 +295,32 @@
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
-}
+  }
+  .header__title{
+    max-width: 90%;
+    margin: 0px auto;
+  }
+
+  .posts{
+    padding: 80px 0 60px;
+  }
+  .posts__item{
+    display: block;
+  }
+  .posts__item a{
+    width: 100%;
+    text-align: center;
+  }
+  .posts__item-description{
+    text-align: center;
+  }
+  .posts__item-title{
+    margin-top: 0px;
+  }
+  .posts__item-link{
+    float: none;
+  }
+  
   
 }
 @media (max-width:768px){
@@ -282,8 +328,7 @@
     display: block;
   }
   .header__title{
-    font-size: 54px;
-    line-height: 54px;
+    font-size: 48px;
   }
   .about__text{
     padding: 45px 10px 30px 10px;
@@ -333,13 +378,25 @@
     max-width: 90%;
   }
 }
+@media (max-width:576px) and (min-height:685px){
+  .main{
+    height: 100vh;
+  }
+}
+@media (max-width:576px) and (min-height:740px){
+  .bottom {
+    padding: 80px 0 40px;
+  }
+}
+@media (max-width:576px) and (min-height:780px){
+  .top__wrapper {
+    padding-top: 310px;
+  }
+}
 @media (max-width:380px){
   .top__title{
     font-size: 26px;
     line-height: 28px;
-  }
-  .top__btn {
-    padding: 18px 20px;
   }
   .advantages{
     border-radius: 0px;
