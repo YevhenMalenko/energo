@@ -161,6 +161,7 @@ h1, h2{
 .top__btn{
   font-weight: 500;
   font-size: 20px;
+  line-height: 24px;
   padding: 20px 52px;
   border-radius: 26px;
   display: block;
@@ -239,6 +240,8 @@ h1, h2{
 }
 .advantages__item{
   text-align: center;
+  max-width: 75px;
+  width: 100%;
 }
 .advantages__item-images{
   height: 45px;

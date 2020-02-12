@@ -20,18 +20,35 @@
     padding-left: 25px;
   }
   .header__btn{
-    font-size: 20px;
-    padding: 18px 35px;
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+  .header__btn::before {
+    font-size: 18px;
   }
   .top__btn{
-    padding: 18px 35px;
+    font-size: 16px;
+    padding: 12px 28px;
   }
   .top__wrapper {
-    padding-top: 250px;
+    padding-top: 280px;
+  }
+  .top__title{
+    font-size: 30px;
+  }
+  .social__list-item a {
+    font-size: 24px;
+  }
+  .social__list-item {
+    padding-bottom: 25px;
   }
   .pricelist__link{
     padding-top: 15px;
+    font-size: 18px;
   }
+  .bottom {
+    bottom: 25px;
+}
   .bottom__right {
     max-width: 450px;
   }
@@ -39,10 +56,27 @@
     font-size: 15px;
   }
   .advantages__items img {
-    width: 38px;
+    width: 36px;
+  }
+  .advantages__item-images {
+    height: 45px;
+    margin-bottom: 0px;
+}
+  .blacklist {
+    width: 105px;
+    height: 105px;
+  }
+  .blacklist:before {
+    width: 105px;
+    height: 105px;
+  }
+  .blacklist img {
+    top: 40px;
+    left: 38px;
   }
   .blacklist__title{
-    font-size: 17px;
+    font-size: 15px;
+    top: -12px;
   }
 }
 @media (max-width:1450px){
@@ -51,7 +85,9 @@
   }
   .header__btn{
     margin-right: -25px;
-    padding: 12px 30px 12px 30px;
+  }
+  .bottom__right {
+    max-width: 420px;
   }
 
 }
@@ -63,7 +99,6 @@
   .header__btn{
     margin-right: 0;
     padding: 12px 15px;
-    font-size: 18px;
   }
   .menu li + li{
     padding-left: 15px;
@@ -73,7 +108,6 @@
   }
   .top__wrapper{
     max-width: 90%;
-    padding-top: 200px;
   }
   .bottom__right{
     max-width: 480px;
@@ -106,7 +140,6 @@
   .bottom {
     bottom: 20px;
   }
-
 }
 
 @media (max-width:992px){
@@ -236,9 +269,6 @@
     max-width: 133px;
     margin: 0px auto;
   }
-  .top__btn{
-    padding: 18px 42px;
-  }
   .weather__widget{
     position: absolute;
     top: 150px;
@@ -266,7 +296,7 @@
 
 @media (max-width:576px){
   .header__btn {
-    padding: 6px 20px 6px 20px;
+    padding: 6px 20px;
 }
   .header__btn span{
     display: none;
@@ -276,12 +306,9 @@
     width: 100%;
   }
   .top__title{
-    font-size: 28px;
+    font-size: 26px;
     line-height: 32px;
   }
-  .top__btn {
-    padding: 18px 40px;
-}
   .item-left{
     left: 0;
   }
