@@ -10,12 +10,16 @@
 }
 @media (max-width:1650px) {
   body{
-    font-size: 20px;
+    font-size: 16px;
   }
   .container{
     max-width: 1360px;
     padding: 0 15px;
   }
+  .logo img {
+    width: 195px;
+    height: 58px;
+}
   .menu a{
     font-size: 15px;
   }
@@ -24,26 +28,24 @@
   }
   .header__btn{
     font-size: 16px;
-    padding: 12px 28px;
+    padding: 12px 24px;
   }
   .header__btn::before {
-    font-size: 18px;
+    font-size: 16px;
   }
   .top__btn{
     font-size: 16px;
-    padding: 12px 28px;
+    padding: 12px 20px;
   }
   .top__wrapper {
     padding-top: 280px;
+    max-width: 785px;
   }
   .top__title{
-    font-size: 30px;
+    font-size: 28px;
   }
   .social__list-item a {
-    font-size: 24px;
-  }
-  .social__list-item {
-    padding-bottom: 25px;
+    font-size: 20px;
   }
   .pricelist__link{
     padding-top: 15px;
@@ -59,45 +61,58 @@
     font-size: 15px;
   }
   .advantages__items img {
-    width: 36px;
+    width: 32px;
   }
   .advantages__item-images {
     height: 45px;
     margin-bottom: 0px;
 }
   .blacklist {
-    width: 105px;
-    height: 105px;
+    width: 97px;
+    height: 97px;
   }
   .blacklist:before {
-    width: 105px;
-    height: 105px;
+    width: 97px;
+    height: 97px;
   }
   .blacklist img {
-    top: 40px;
-    left: 38px;
+    top: 37px;
+    left: 36px;
   }
   .blacklist__title{
     font-size: 15px;
-    top: -12px;
+    line-height: 18px;
+    top: -4px;
   }
   .header__title{
     font-size: 56px;
     line-height: 56px;
   }
+  .header__content {
+    min-height: 145px;
+  }
+  .header__content-overlay {
+    min-height: 145px;
+  }
+  .header__content-custom .social__list {
+    top: 15px;
+  }
+  .about__text{
+    line-height: 28px;
+    padding: 40px 10px 30px 10px;
+  }
 
 
   .posts__item-title{
-    font-size: 20px;
   }
   .posts__item-title a{
-    font-size: 20px;
+    font-size: 16px;
   }
   .posts__item-text{
-    font-size: 20px;
+    font-size: 16px;
   }
   .posts__item-link{
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width:1450px){
@@ -126,9 +141,6 @@
   }
   .social{
     right: 0;
-  }
-  .top__wrapper{
-    max-width: 90%;
   }
   .bottom__right{
     max-width: 480px;
@@ -306,6 +318,7 @@
   }
   .posts__item{
     display: block;
+    margin-bottom: 45px;
   }
   .posts__item a{
     width: 100%;
@@ -328,10 +341,10 @@
     display: block;
   }
   .header__title{
-    font-size: 48px;
+    font-size: 46px;
   }
   .about__text{
-    padding: 45px 10px 30px 10px;
+    padding: 30px 10px;
   }
   .blacklist{
     display: none;
