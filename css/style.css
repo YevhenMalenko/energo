@@ -238,6 +238,9 @@ h1, h2{
   max-width: 75px;
   width: 100%;
 }
+.advantages__item:hover .advantages__title{
+  color: #e37f1e;
+}
 .advantages__item-images{
   height: 45px;
   margin-bottom: 15px;
@@ -248,6 +251,7 @@ h1, h2{
 .advantages__title{
   font-size: 20px;
   line-height: 20px;
+  color: #fff;
 }
 .bottom__left{
   display: flex;
