@@ -44,16 +44,15 @@
   .top__title{
     font-size: 28px;
   }
+  .social__list{
+    right: 24px;
+  }
   .social__list-item a {
     font-size: 20px;
   }
-  .pricelist__link{
-    padding-top: 15px;
-    font-size: 18px;
-  }
   .bottom {
     bottom: 25px;
-}
+  }
   .bottom__right {
     max-width: 450px;
   }
@@ -102,6 +101,10 @@
     padding: 40px 10px 30px 10px;
   }
 
+  .contacts__right {
+    max-width: 300px;
+}
+
 
   .posts__item-title{
   }
@@ -119,12 +122,15 @@
   .container{
     max-width: 1170px;
   }
-  .header__btn{
-    margin-right: -25px;
-  }
   .bottom__right {
     max-width: 420px;
   }
+  .map {
+    max-width: 75%;
+  }
+  .contacts__right {
+    max-width: 20%;
+}
 
 }
 @media (max-width:1200px){
@@ -133,18 +139,18 @@
     height: 48px;
   }
   .header__btn{
-    margin-right: 0;
     padding: 12px 15px;
   }
   .menu li + li{
     padding-left: 15px;
   }
-  .social{
-    right: 0;
+  .social__list{
+    right: 15px;
   }
   .bottom__right{
     max-width: 480px;
   }
+  
 }
 @media (max-width:1030px){
   .header__btn{
@@ -178,6 +184,9 @@
 @media (max-width:992px){
   body.lock {
     overflow: hidden;
+  }
+  .social__list{
+    right: 10px;
   }
   .menu__btn {
     display: block;
@@ -312,6 +321,14 @@
     max-width: 90%;
     margin: 0px auto;
   }
+  .contacts__top{
+    display: block;
+    text-align: center;
+    margin: 35px auto 35px auto;
+  }
+  .contacts__top-item{
+    padding-bottom: 15px;
+  }
 
   .posts{
     padding: 80px 0 60px;
@@ -348,6 +365,27 @@
   }
   .blacklist{
     display: none;
+  }
+  .contacts__bottom{
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px auto 50px auto;
+  }
+  .map {
+    max-width: 100%;
+  }
+  .contacts__right {
+    max-width: 100%;
+    margin-top: 35px;
+  }
+  .contacts__right:after{
+    content:none;
+  }
+  .contacts__right-item{
+    padding-bottom: 25px;
+  }
+  .contacts__right-title{
+    padding-bottom: 15px;
   }
 
 }
