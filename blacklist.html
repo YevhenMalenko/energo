@@ -7,6 +7,7 @@
   <title>Энергетик</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a5667f6f20.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -16,7 +17,8 @@
     <div class="container">
       <div class="header__top">
         <a class="logo" href="index.html">
-          <img src="images/logo-blue.png" alt="логотип">
+          <img src="images/logo-blue.png" alt="логотип" class="logo-blue">
+          <img src="images/logo.png" alt="логотип" class="logo-white">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -58,19 +60,22 @@
             <div class="blacklist__item-title">
               ООО "Чебурашка", г. Пермь, ул. Холмогорская 32, оф. 455
             </div>
-            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf">Документы</a>
+            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf" data-fancybox="certificates" 
+            data-caption="Документы">Документы</a>
           </div>
           <div class="blacklist__item">
             <div class="blacklist__item-title">
               ООО "Чебурашка", г. Пермь, ул. Холмогорская 32, оф. 455
             </div>
-            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf">Документы</a>
+            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf" data-fancybox="certificates" 
+            data-caption="Документы">Документы</a>
           </div>
           <div class="blacklist__item">
             <div class="blacklist__item-title">
               ООО "Чебурашка", г. Пермь, ул. Холмогорская 32, оф. 455
             </div>
-            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf">Документы</a>
+            <a href="images/certificates/Бензин АИ-95-К5 (Газпром).pdf" data-fancybox="certificates" 
+            data-caption="Документы">Документы</a>
           </div>
         </div>
 
@@ -79,24 +84,30 @@
     </section>
   </main>
 
-
-<script>
-  let burger = document.querySelector('.menu__btn'),
-      menu = document.querySelector('.menu'),
-      menuItem = document.querySelectorAll('.menu a');
-
-  burger.addEventListener('click', function () {
-      this.classList.toggle('active');
-      menu.classList.toggle('active');
-      document.body.classList.toggle('lock');
-      menuItem.forEach(function(item) {
-          item.addEventListener('click', function() {
-              burger.classList.remove('active');
-              menu.classList.remove('active');
-              document.body.classList.remove('lock');
-          });
-      });
-  });
-</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>  
+  <script>
+    let burger = document.querySelector('.menu__btn'),
+        menu = document.querySelector('.menu'),
+        menuItem = document.querySelectorAll('.menu a'),
+        logoBlue = document.querySelector('.logo-blue'),
+        logoWhite = document.querySelector('.logo-white');
+  
+    burger.addEventListener('click', function () {
+        this.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.classList.toggle('lock');
+        logoBlue.classList.toggle('hidden');
+        logoWhite.classList.toggle('active');
+        menuItem.forEach(function(item) {
+            item.addEventListener('click', function() {
+                burger.classList.remove('active');
+                menu.classList.remove('active');
+                document.body.classList.remove('lock');
+            });
+        });
+    });
+  </script>
 </body>
 </html>

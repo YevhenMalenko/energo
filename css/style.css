@@ -447,7 +447,7 @@ h1, h2{
   max-width: 1370px;
   margin: 0px auto 100px auto;
   position: relative;
-  z-index: 15;
+  z-index: 5;
 }
 .contacts__bottom:after{
   content: '';
@@ -580,37 +580,38 @@ h1, h2{
 .pricelist{
   padding: 50px 0 70px;
 }
-table {
+.pricelist__table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   border: 3px solid #47a1ff;
 }
-thead th:nth-child(1) {
+.pricelist__table thead th:nth-child(1) {
   width: 25%;
 }
-thead th:nth-child(2) {
+.pricelist__table thead th:nth-child(2) {
   width: 12%;
 }
-th, td {
+.pricelist__table th, .pricelist__table td {
   padding: 20px 10px;
   text-align: center;
 }
-td{
+.pricelist__table td{
   font-weight: 300;
+  word-wrap: break-word;
 }
-td a{
+.pricelist__table td a{
   color: #000;
   cursor: pointer;
 }
-td a:hover{
+.pricelist__table td a:hover{
   color: #e37f1e;
 }
-th{
+.pricelist__table th{
   background: #90bdeb;
   font-weight: 500;
 }
-tr:nth-child(2n) {
+.pricelist__table tr:nth-child(2n) {
   background: #90bdeb;
 }
 .pricelist__download{
@@ -629,16 +630,4 @@ tr:nth-child(2n) {
 }
 .logo-blue.hidden{
   display: none;
-}
-
-.modal__document{
-  background: #fff;
-  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
-  position: fixed;
-  z-index: 4;
-  left: 50%;
-  top: 50px;
-  width: 480px;
-  transform: translateX(-50%);
-  position: relative;
 }

@@ -161,10 +161,10 @@
   .bottom__right{
     max-width: 480px;
   }
-  thead th:nth-child(1) {
+  .pricelist__table thead th:nth-child(1) {
     width: 23%;
   }
-  thead th:nth-child(2) {
+  .pricelist__table thead th:nth-child(2) {
     width: 14%;
   }
   
@@ -373,13 +373,13 @@
   .blacklist__items{
     max-width: 100%;
   }
-  thead th:nth-child(2) {
+  .pricelist__table thead th:nth-child(2) {
     width: 17%;
   }
-  th:nth-child(6), td:nth-child(6) {
+  .pricelist__table th:nth-child(6), .pricelist__table td:nth-child(6) {
     display: none;
   }
-  th:nth-child(7), td:nth-child(7) {
+  .pricelist__table th:nth-child(7), .pricelist__table td:nth-child(7) {
     display: none;
   }
   
@@ -419,16 +419,16 @@
   .contacts__right-title{
     padding-bottom: 15px;
   }
-  thead th:nth-child(1) {
+  .pricelist__table thead th:nth-child(1) {
     width: 28%;
   }
-  thead th:nth-child(2) {
+  .pricelist__table thead th:nth-child(2) {
     width: 28%;
   }
-  th:nth-child(4), td:nth-child(4) {
+  .pricelist__table th:nth-child(4), .pricelist__table td:nth-child(4) {
     display: none;
   }
-  th:nth-child(8), td:nth-child(8) {
+  .pricelist__table th:nth-child(8), .pricelist__table td:nth-child(8) {
     display: none;
   }
 
@@ -472,13 +472,13 @@
   .bottom__right{
     max-width: 90%;
   }
-  thead th:nth-child(1) {
+  .pricelist__table thead th:nth-child(1) {
     width: 37%;
   }
-  thead th:nth-child(2) {
+  .pricelist__table thead th:nth-child(2) {
     width: 37%;
   }
-  th:nth-child(5), td:nth-child(5) {
+  .pricelist__table th:nth-child(5), .pricelist__table td:nth-child(5) {
     display: none;
   }
 }
@@ -506,10 +506,10 @@
     border-radius: 0px;
     padding: 10px 5px;
   }
-  thead th:nth-child(1) {
+  .pricelist__table thead th:nth-child(1) {
     width: 60%;
   }
-  th:nth-child(2), td:nth-child(2) {
+  .pricelist__table th:nth-child(2), .pricelist__table td:nth-child(2) {
     display: none;
   }
 }

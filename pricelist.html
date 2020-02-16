@@ -7,6 +7,7 @@
   <title>Энергетик</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a5667f6f20.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -54,7 +55,7 @@
   <main class="main__content">
     <section class="pricelist">
       <div class="container">
-        <table>
+        <table class="pricelist__table">
           <thead>
             <tr>
               <th>Наименование продукции</th>
@@ -76,7 +77,9 @@
               <td>41,41</td>
               <td>г.Пермь</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/Бензин АИ-95-К5 (Газпром).jpg" data-fancybox="certificates" 
+                data-caption="Топливо дизельное ЕВРО, межсезонное, сорта Е, экологического класса К5 (ДТ-Е-К5)">Паспорт</a></td>
             </tr>
             <tr>
               <td>ДТ-3-K5 1 класс, дизельное топливо зимнее EBPOS</td>
@@ -86,7 +89,9 @@
               <td>41,41</td>
               <td>г.Пермь</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/КГС I группы (Газпром добыча Уренгой).jpg" data-fancybox="certificates" 
+                data-caption="ДТ-3-K5 1 класс, дизельное топливо зимнее EBPOS">Паспорт</a></td>
             </tr>
             <tr>
               <td>Конденсат газовый стаильный I группы</td>
@@ -96,7 +101,10 @@
               <td>41,41</td>
               <td>г.Уренгой</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/ТАНЕКО ТС-1(1).jpg" data-fancybox="certificates" 
+                data-caption="Конденсат газовый стаильный I группы">Паспорт</a>
+              </td>
             </tr>
             <tr>
               <td>Топливо для реактивных двигателей ТС, Высший сорт</td>
@@ -106,7 +114,9 @@
               <td>41,41</td>
               <td>г.Пермь</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/ТАНЕКО ТС-1(2).jpg" data-fancybox="certificates" 
+                data-caption="Топливо для реактивных двигателей ТС, Высший сорт">Паспорт</a></td>
             </tr>
             <tr>
               <td>Топливо высоковязкое Вид2</td>
@@ -116,7 +126,9 @@
               <td>41,41</td>
               <td>г.Самара</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/ТВ Вид 2 (Самаранефть-сервис).jpg" data-fancybox="certificates" 
+                data-caption="Топливо высоковязкое Вид2">Паспорт</a></td>
             </tr>
             <tr>
               <td>Газойль низкозастывающий</td>
@@ -126,7 +138,10 @@
               <td>41,41</td>
               <td>г.Самара</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/Газойль низкозастывающий (Новошахтинск).jpg" data-fancybox="certificates" 
+                data-caption="Газойль низкозастывающий" >Паспорт</a>
+              </td>
             </tr>
             <tr>
               <td>ТНДБК Топливо низкотемпературное для бытовых котлов</td>
@@ -136,7 +151,9 @@
               <td>41,41</td>
               <td>г.Самара</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/ТНДБК (Антипинский НПЗ).jpg" data-fancybox="certificates" 
+                data-caption="ТНДБК Топливо низкотемпературное для бытовых котлов">Паспорт</a></td>
             </tr>
             <tr>
               <td>Бензин неэтилированный марки АИ-92-К5</td>
@@ -146,7 +163,9 @@
               <td>41,41</td>
               <td>г.Самара</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg" data-fancybox="certificates" 
+                data-caption="Бензин неэтилированный марки АИ-92-К5">Паспорт</a></td>
             </tr>
             <tr>
               <td>Бензин AИ-92-К5</td>
@@ -156,7 +175,9 @@
               <td>41,41</td>
               <td>г.Самара</td>
               <td>авто, жд</td>
-              <td><a href="#">Паспорт</a></td>
+              <td>
+                <a href="images/certificates/ДТ класс 1 Лукойл от 03.12.2019.jpg" data-fancybox="certificates" 
+                data-caption="Бензин AИ-92-К5">Паспорт</a></td>
             </tr>
           </tbody>
         </table>
@@ -167,16 +188,9 @@
     </section>
   </main>
 
-  <div class="overlay">
-    <div class="modal__document">
-      <div class="modal-close">&times;</div>
-      <div class="certificate__image">
-        <img src="images/certificates/Газойль низкозастывающий (Новошахтинск).jpg" alt="">
-      </div>
-    </div>
-  </div>
-
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>  
 <script>
   let burger = document.querySelector('.menu__btn'),
       menu = document.querySelector('.menu'),
@@ -199,22 +213,6 @@
       });
   });
 </script>
-<script>
-    let button = document.querySelectorAll('td a'),
-        overlay = document.querySelector('.overlay'),
-        close = document.querySelector('.modal-close');
 
-    button.forEach(function(item) {
-          item.addEventListener('click', function () {
-            overlay.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        });
-      });    
-
-    close.addEventListener('click', function () {
-            overlay.style.display = 'none';
-            document.body.style.overflow = '';
-        });
-</script>
 </body>
 </html>
