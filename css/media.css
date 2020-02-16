@@ -66,15 +66,15 @@
     height: 45px;
     margin-bottom: 0px;
 }
-  .blacklist {
+  .blacklist__link {
     width: 97px;
     height: 97px;
   }
-  .blacklist:before {
+  .blacklist__link:before {
     width: 97px;
     height: 97px;
   }
-  .blacklist img {
+  .blacklist__link img {
     top: 37px;
     left: 36px;
   }
@@ -100,13 +100,24 @@
     line-height: 28px;
     padding: 40px 10px 30px 10px;
   }
-
+  .contacts__top {
+    padding: 20px 45px;
+  }
   .contacts__right {
     max-width: 300px;
-}
+  }
+  .contacts__right-item{
+    padding-bottom: 35px;
+  }
+  .contacts__right-title{
+    padding-bottom: 15px;
+  }
 
-
-  .posts__item-title{
+  .posts{
+  padding: 60px 0;
+  }
+  .posts__item{
+    margin-bottom: 40px;
   }
   .posts__item-title a{
     font-size: 16px;
@@ -149,6 +160,12 @@
   }
   .bottom__right{
     max-width: 480px;
+  }
+  thead th:nth-child(1) {
+    width: 23%;
+  }
+  thead th:nth-child(2) {
+    width: 14%;
   }
   
 }
@@ -353,6 +370,18 @@
   .posts__item-link{
     float: none;
   }
+  .blacklist__items{
+    max-width: 100%;
+  }
+  thead th:nth-child(2) {
+    width: 17%;
+  }
+  th:nth-child(6), td:nth-child(6) {
+    display: none;
+  }
+  th:nth-child(7), td:nth-child(7) {
+    display: none;
+  }
   
   
 }
@@ -366,7 +395,7 @@
   .about__text{
     padding: 30px 10px;
   }
-  .blacklist{
+  .blacklist__link{
     display: none;
   }
   .contacts__bottom{
@@ -389,6 +418,18 @@
   }
   .contacts__right-title{
     padding-bottom: 15px;
+  }
+  thead th:nth-child(1) {
+    width: 28%;
+  }
+  thead th:nth-child(2) {
+    width: 28%;
+  }
+  th:nth-child(4), td:nth-child(4) {
+    display: none;
+  }
+  th:nth-child(8), td:nth-child(8) {
+    display: none;
   }
 
 }
@@ -431,6 +472,15 @@
   .bottom__right{
     max-width: 90%;
   }
+  thead th:nth-child(1) {
+    width: 37%;
+  }
+  thead th:nth-child(2) {
+    width: 37%;
+  }
+  th:nth-child(5), td:nth-child(5) {
+    display: none;
+  }
 }
 @media (max-width:576px) and (min-height:685px){
   .main{
@@ -455,6 +505,12 @@
   .advantages{
     border-radius: 0px;
     padding: 10px 5px;
+  }
+  thead th:nth-child(1) {
+    width: 60%;
+  }
+  th:nth-child(2), td:nth-child(2) {
+    display: none;
   }
 }
 

@@ -16,7 +16,8 @@
     <div class="container">
       <div class="header__top">
         <a class="logo" href="index.html">
-          <img src="images/logo-blue.png" alt="логотип">
+          <img src="images/logo-blue.png" alt="логотип" class="logo-blue">
+          <img src="images/logo.png" alt="логотип" class="logo-white">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -51,24 +52,144 @@
     </div>
   </header>
   <main class="main__content">
-    <section class="about">
+    <section class="pricelist">
       <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Наименование продукции</th>
+              <th>Производитель продукции</th>
+              <th>Цена за тонну</th>
+              <th>Плотность при наливе</th>
+              <th>Цена за литр</th>
+              <th>Место отгрузки</th>
+              <th>Вид отгрузки</th>
+              <th>Паспорт продукции</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Топливо дизельное ЕВРО, межсезонное, сорта Е, экологического класса К5 (ДТ-Е-К5)</td>
+              <td>ЛУКОЙЛ</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Пермь</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>ДТ-3-K5 1 класс, дизельное топливо зимнее EBPOS</td>
+              <td>ЛУКОЙЛ</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Пермь</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Конденсат газовый стаильный I группы</td>
+              <td>Газпром</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Уренгой</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Топливо для реактивных двигателей ТС, Высший сорт</td>
+              <td>ТАНЕКО</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Пермь</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Топливо высоковязкое Вид2</td>
+              <td>Самаранефть-сервис</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Самара</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Газойль низкозастывающий</td>
+              <td>Новошахтинск</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Самара</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>ТНДБК Топливо низкотемпературное для бытовых котлов</td>
+              <td>Антипинский НПЗ</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Самара</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Бензин неэтилированный марки АИ-92-К5</td>
+              <td>Газпром</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Самара</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+            <tr>
+              <td>Бензин AИ-92-К5</td>
+              <td>Лукойл</td>
+              <td>49000,00</td>
+              <td>0,845</td>
+              <td>41,41</td>
+              <td>г.Самара</td>
+              <td>авто, жд</td>
+              <td><a href="#">Паспорт</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="pricelist__download">Скачать прайс</a>
 
 
       </div>
     </section>
   </main>
 
+  <div class="overlay">
+    <div class="modal__document">
+      <div class="modal-close">&times;</div>
+      <div class="certificate__image">
+        <img src="images/certificates/Газойль низкозастывающий (Новошахтинск).jpg" alt="">
+      </div>
+    </div>
+  </div>
+
 
 <script>
   let burger = document.querySelector('.menu__btn'),
       menu = document.querySelector('.menu'),
-      menuItem = document.querySelectorAll('.menu a');
+      menuItem = document.querySelectorAll('.menu a'),
+      logoBlue = document.querySelector('.logo-blue'),
+      logoWhite = document.querySelector('.logo-white');
 
   burger.addEventListener('click', function () {
       this.classList.toggle('active');
       menu.classList.toggle('active');
       document.body.classList.toggle('lock');
+      logoBlue.classList.toggle('hidden');
+      logoWhite.classList.toggle('active');
       menuItem.forEach(function(item) {
           item.addEventListener('click', function() {
               burger.classList.remove('active');
@@ -77,6 +198,23 @@
           });
       });
   });
+</script>
+<script>
+    let button = document.querySelectorAll('td a'),
+        overlay = document.querySelector('.overlay'),
+        close = document.querySelector('.modal-close');
+
+    button.forEach(function(item) {
+          item.addEventListener('click', function () {
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+      });    
+
+    close.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+        });
 </script>
 </body>
 </html>

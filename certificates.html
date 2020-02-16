@@ -55,28 +55,28 @@
       <div class="container">
         <ul class="sertificates__list">
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №40766 Бензин неэтилированный марки AB-92-K5</a>
+            <a href="#">Паспорт №40766 Бензин неэтилированный марки AB-92-K5</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №4542/2019 Газойль</a>
+            <a href="#">Паспорт №4542/2019 Газойль</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №33-3-12-19 Топливо дизельное Евро, зимнее, класса1, экологического класса K5( ДТ-3К5) Евро, зимнее, класса1, экологического класса К5(ДТ-3K5)</a>
+            <a href="#">Паспорт №33-3-12-19 Топливо дизельное Евро, зимнее, класса1, экологического класса K5( ДТ-3К5) Евро, зимнее, класса1, экологического класса К5(ДТ-3K5)</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт № 7813/18 Конденсат газовый, стабильный , 1 группа</a>
+            <a href="#">Паспорт № 7813/18 Конденсат газовый, стабильный , 1 группа</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №3008H от 11.09.2019 Топливо для реактивных двигателей марки ТС-1, высший сорт</a>
+            <a href="#">Паспорт №3008H от 11.09.2019 Топливо для реактивных двигателей марки ТС-1, высший сорт</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №3519 от 21.12.2019 Топливо высоковязкое Вид2- СТО75163429-004-2018</a>
+            <a href="#">Паспорт №3519 от 21.12.2019 Топливо высоковязкое Вид2- СТО75163429-004-2018</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №798 Топливо низкотемпературное для бытовых котлов СТО 73171028-018-2019</a>
+            <a href="#">Паспорт №798 Топливо низкотемпературное для бытовых котлов СТО 73171028-018-2019</a>
           </li>
           <li class="certificates__list-item">
-            <a href="images/certificates/АИ-92-К5 Газпром (Салават).jpg">Паспорт №19026489 Бензин неэтилированный Премиум Евро-95, вид III ( автомобильный бензин экологического класса K-5 марки АИ-95-К5</a>
+            <a href="#">Паспорт №19026489 Бензин неэтилированный Премиум Евро-95, вид III ( автомобильный бензин экологического класса K-5 марки АИ-95-К5</a>
           </li>
         </ul>
 
@@ -84,6 +84,36 @@
       </div>
     </section>
   </main>
+
+  <div class="overlay">
+    <div class="modal__document">
+      <div class="modal-close">&times;</div>
+      <div class="crtificate__image">
+        <img src="images/certificates/ДТ класс 1 Лукойл от 03.12.2019.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let button = document.querySelectorAll('.certificates__list-item a'),
+        modalDoc = document.getElementById('modal__document'),
+        overlay = document.querySelector('.overlay'),
+        close = document.querySelector('.modal-close');
+
+    button.forEach(function(item) {
+          item.addEventListener('click', function () {
+            overlay.style.display = 'block';
+ 
+            document.body.style.overflow = 'hidden';
+        });
+      });    
+
+    close.addEventListener('click', function () {
+            overlay.style.display = 'none';
+
+            document.body.style.overflow = '';
+        });
+</script>
 
 
 <script>

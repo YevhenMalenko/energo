@@ -179,12 +179,12 @@ h1, h2{
   display: flex;
   justify-content: space-between;
 }
-.blacklist{
+.blacklist__link{
   position: relative;
   width: 133px;
   height: 133px;
 }
-.blacklist:before{
+.blacklist__link:before{
   content: '';
   position: absolute;
   top: 0;
@@ -197,7 +197,7 @@ h1, h2{
   border-bottom: 2px solid #fff;
   border-radius: 50%;
 }
-.blacklist img {
+.blacklist__link img {
   width: 35px;
   position: absolute;
   top: 48px;
@@ -409,7 +409,7 @@ h1, h2{
 .advantages{
   max-width: 690px;
   margin: 0px auto 75px auto;
-  background-image: url(../images/adv-bg.jpg);
+  background-image: url(../images/advantage-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -503,9 +503,18 @@ h1, h2{
 .line{
   height: 30px;
   background: linear-gradient( 90deg, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
-
 }
-
+.certificates{
+  padding-top: 50px;
+}
+.certificates__list-item a{
+  line-height: 24px;
+  padding-bottom: 20px;
+  color: #000;
+}
+.certificates__list-item a:hover{
+  color: #47a1ff;
+}
 
 .posts{
   padding: 120px 0 100px;
@@ -549,4 +558,87 @@ h1, h2{
   font-family: fontawesome;
   font-size: 20px;
   padding-left: 10px;
+}
+.blacklist{
+  padding-top: 50px;
+}
+.blacklist__items{
+  max-width: 60%;
+  margin: 0px auto;
+}
+.blacklist__item-title{
+  font-weight: 500;
+  color: #47a1ff;
+  padding-bottom: 12px;
+}
+.blacklist__item{
+  padding-bottom: 25px;
+}
+.blacklist__item a{
+  color:#e37f1e;
+}
+.pricelist{
+  padding: 50px 0 70px;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #47a1ff;
+}
+thead th:nth-child(1) {
+  width: 25%;
+}
+thead th:nth-child(2) {
+  width: 12%;
+}
+th, td {
+  padding: 20px 10px;
+  text-align: center;
+}
+td{
+  font-weight: 300;
+}
+td a{
+  color: #000;
+  cursor: pointer;
+}
+td a:hover{
+  color: #e37f1e;
+}
+th{
+  background: #90bdeb;
+  font-weight: 500;
+}
+tr:nth-child(2n) {
+  background: #90bdeb;
+}
+.pricelist__download{
+  color: #e37f1e;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  cursor: pointer;
+}
+.logo-white{
+  display: none;
+}
+.logo-white.active{
+  display: block;
+}
+.logo-blue.hidden{
+  display: none;
+}
+
+.modal__document{
+  background: #fff;
+  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 50px;
+  width: 480px;
+  transform: translateX(-50%);
+  position: relative;
 }
