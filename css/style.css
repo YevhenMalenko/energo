@@ -44,9 +44,12 @@ h1, h2{
   width: 100%;
 }
 .header__top{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   height: 140px;
 }
 .logo{
@@ -67,6 +70,7 @@ h1, h2{
   color: #FFFFFF;
   font-size: 20px;
   line-height: 20px;
+  -webkit-transition: all .3s;
   transition: all .3s;
   position: relative;
 }
@@ -86,8 +90,10 @@ h1, h2{
   position: absolute;
   left: 50%;
   bottom: -10px;
-  transform: translateX(-50%);
-  transition-duration: 0.3s  
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s  
 }
 .menu a:after:focus,
 .menu a:after:hover {
@@ -176,8 +182,10 @@ h1, h2{
   bottom: 50px;
 }
 .bottom__inner{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .blacklist__link{
   position: relative;
@@ -217,8 +225,10 @@ h1, h2{
   width: 100%;
 }
 .advantages__items{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .bottom__right:before,
 .bottom__right:after{
@@ -254,8 +264,10 @@ h1, h2{
   color: #fff;
 }
 .bottom__left{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   max-width: 370px;
   width: 100%;
 }
@@ -286,7 +298,8 @@ h1, h2{
   left: 50%;
   top: 150px;
   width: 752px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   position: relative;
   padding-bottom: 25px;
 }
@@ -364,7 +377,6 @@ h1, h2{
   cursor: pointer;
 }
 
-
 .header-custom{
   background-color: #fff;
   position: initial;
@@ -386,6 +398,8 @@ h1, h2{
 }
 .header__content-overlay{
   background: rgba(2,110,222, 0.7);
+  background: -webkit-gradient( linear, left top, right top, color-stop(25%, rgba(2,110,222,0.89)), color-stop(54%, rgba(21,75,131,0.89)), to(rgba(40,40,40,0.95)));
+  background: -webkit-linear-gradient( left, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
   background: linear-gradient( 90deg, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
   min-height: 165px;
 }
@@ -398,7 +412,11 @@ h1, h2{
   font-weight: 300;
   text-align: center;
   color: #fff;
-  padding-top: 45px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
 }
 .about__text{
   padding: 40px 10px;
@@ -420,12 +438,16 @@ h1, h2{
 
 .contacts__top{
   max-width: 1370px;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   background-image: url(../images/contacts-bg1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background: -webkit-gradient( linear, left top, right top, color-stop(25%, rgba(2,110,222,0.89)), color-stop(54%, rgba(21,75,131,0.89)), to(rgba(40,40,40,0.95)));
+  background: -webkit-linear-gradient( left, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
   background: linear-gradient( 90deg, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
   padding: 25px 65px;
   border-radius: 34px;
@@ -442,8 +464,10 @@ h1, h2{
   color: #fff;
 }
 .contacts__bottom{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   max-width: 1370px;
   margin: 0px auto 100px auto;
   position: relative;
@@ -502,6 +526,8 @@ h1, h2{
 }
 .line{
   height: 30px;
+  background: -webkit-gradient( linear, left top, right top, color-stop(25%, rgba(2,110,222,0.89)), color-stop(54%, rgba(21,75,131,0.89)), to(rgba(40,40,40,0.95)));
+  background: -webkit-linear-gradient( left, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
   background: linear-gradient( 90deg, rgba(2,110,222,0.89) 25%, rgba(21,75,131,0.89) 54%, rgba(40,40,40,0.95) 100%);
 }
 .certificates{
@@ -520,8 +546,10 @@ h1, h2{
   padding: 120px 0 100px;
 }
 .posts__item{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
 }
 .posts__item img{
